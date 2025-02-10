@@ -1,0 +1,28 @@
+.home {
+    width: 100%;
+    display: flex;
+}
+
+.titles {
+    flex: 50%;
+    height: 100%;
+    padding-left: 60px;
+    padding-top: 100px;
+}
+
+.titles-img {
+    max-width: 25%;
+    object-fit: cover;
+}
+
+.brain-dots {
+    flex: 50%;
+    height: 100%;
+    padding-right: 60px;
+    padding-top: 100px;
+}
+
+.brain-dots-img {
+    max-width: 100%;
+    object-fit: cover;
+}

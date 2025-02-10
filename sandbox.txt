@@ -1,0 +1,80 @@
+<!-- MASK -->
+        <!-- <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6);"> -->
+            <!-- CONTAINER -->
+            <div class="container d-flex align-items-center h-100">
+                <!-- CALL TO ACTION -->
+                <div class="text-left"
+                     style="color: silver">
+                    <h1 class>INSTITUTE for BRAIN HEALTH</h1>
+                    <h5 class>Exploring brain health and science</h5>
+                    <a class="btn btn-primary btn-info btn-rounded" href="#" role="button" style="font-weight: bolder; font-size: larger;">TOUR IBH</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="bg-image vh-100"
+         style="background-image: url(img/big_brain_background.png);" >
+    </div>
+
+
+<div class="container-fluid">
+            <div class="row" style="text-align: center;">
+                <div class="col g-0">
+                    <div class="artist">
+                        <a href="zarove.html">
+                            Zarove
+                            <img class="artist_menu_img" src="mbs_images/zarove/zarove_gtl_full.png" alt="kukeri face">
+                        </a>
+                    </div>
+                </div>
+                <div class="stack-space"></div>
+                <div class="col g-0">
+                    <div class="artist">
+                        <a href="vakarel.html">
+                            Vakarel
+                            <img class="artist_menu_img" src="mbs_images/vaka/computer.png" alt="trippy knobs">
+                        </a>
+                    </div>
+                </div>
+                <div class="stack-space"></div>
+                <!-- <div class="col g-0">
+                    <div class="artist">
+                        <a href="barnett_kalar.html">
+                            Barnett Kalar
+                            <img class="artist_menu_img" src="mbs_images/bk/pg_gal5.png" alt="Barnett Kalar at gallery 5">
+                        </a>
+                    </div>
+                </div> -->
+                <div class="stack-space"></div>
+                <div class="col g-0">
+                    <div class="artist">
+                        <a href="shtedoidish.html">
+                            Shtedoidish
+                            <img class="artist_menu_img" src="mbs_images/shte/shte_artist_img.png" alt="Shtedoidish at Cafe Moustache, Chicago">
+                        </a>
+                    </div>
+                </div>
+                <div class="stack-space"></div>
+                <div class="col g-0">
+                    <div class="artist">
+                        <a href="zor.html">
+                            Zor
+                            <img class="artist_menu_img" src="mbs_images/zor/kukeri eye.png" alt="kukeri face">
+                        </a>
+                    </div>
+                </div>
+                <div class="stack-space"></div>
+            </div>
+            <div class="row" style="text-align: center; margin-top: -10vh;">
+                <div class="col">
+                    <div class="artist" style="margin: auto;">
+                        <div class="gary-fade">
+                            <a href="gary_kalar.html">Gary Kalar<br>
+                                <img class="kalar_face" src="mbs_images/gk/kalar_face_offset.png" alt="kalar face">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
