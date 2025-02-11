@@ -2,6 +2,7 @@
 <html lang="en" data-mdb-theme="dark">
 
 <head>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -26,21 +27,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <!-- MDB -->
 <link rel="stylesheet" href="css/mdb.min.css" />
+<!-- SEO and SM stuff -->
+<meta name="keywords" content="HTML, CSS">
+<meta name="description" content="Institute for Brain Health">
+<meta name="author" content="Institute for Brain Health">
+<meta property="og:image" content="img/ibh_logo.png">
+<!-- CODE -->
+<script type="text/javascript" src="js/script.js">
+    window.onload = switch_about(1)
+    window.onload = switch_team(1)
+</script>
+
 </head>
 
 <!-- BODY -->
-<body style="background-color: #e6e6e6ff;">
-    
+<body class="invisible-scrollbar" style="max-width: 100vw; background-color: white;">
+
 <!-- HEADER -->
-<header>
+<header style="max-width: 100vw;">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top";
-         style="z-index: 1; min-height: 58.59px;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top";
+         style="z-index: 1; min-height: 58.59px; background-color: #0697be;">
         <!-- CONTAINER WRAPPER -->
         <div class="container">
-            <div class="navbar-brand">
-                <!-- NAVBAR ACRONYM -->
-                <a class="navbar-brand mt-2 mt-lg-0" style="color: silver;" href="#">IBH</a>
+            <div class="navbar-brand" >
                 <!-- NAVBAR LOGO -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="#">
                     <!-- WITH ICON: -->
@@ -49,7 +59,7 @@
                     </a> -->
                     <!-- WITH IMAGE: -->
                     <img
-                        src="img/IBH_logo_transparent_dark.png"
+                        src="img/ibh_logo_noblue.png"
                         height="30"
                         alt="IBH Logo"
                         loading="lazy"
@@ -74,317 +84,210 @@
                 <!-- LEFT ELEMENTS -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item" style="margin-left: 2vw;">
-                        <a class="nav-link text-secondary" style="font-size: larger;" href="#about">About</a>
+                        <a class="nav-link text-secondary"
+                           style="font-family: 'Montserrat';
+                                  font-size: larger;
+                                  color: white !important;"
+                           href="#about">About</a>
                     </li>
                     <li class="nav-item" style="margin-left: 2vw;">
-                        <a class="nav-link text-secondary" style="font-size: larger;" href="#news">News</a>
+                        <a class="nav-link text-secondary"
+                           style="font-family: 'Montserrat';
+                                  font-size: larger;
+                                  color: white !important;"
+                           href="#team">Team</a>
                     </li>
                     <li class="nav-item" style="margin-left: 2vw;">
-                        <a class="nav-link text-secondary" style="font-size: larger;" href="#contact">Contact</a>
+                        <a class="nav-link text-secondary"
+                           style="font-family: 'Montserrat';
+                                  font-size: larger;
+                                  color: white !important;"
+                           href="#events">Events</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: 2vw;">
+                        <a class="nav-link text-secondary"
+                           style="font-family: 'Montserrat';
+                           font-size: larger;
+                           color: white !important;"
+                           href="#contact">Contact</a>
                     </li>
                 </ul>
                 <!-- RIGHT ELEMENTS -->
-                <div class="d-flex align-items-center">
-                    <!-- Icons -->
-                    <a class="text-secondary me-3" href="https://www.facebook.com" rel="nofollow" target="_blank">
-                        <i class="fab fa-facebook" style="font-size: x-large; margin-left: 2vw;"></i>
-                    </a>
-                    <a class="text-secondary me-3" href="https://www.instagram.com" rel="nofollow" target="_blank">
-                        <i class="fab fa-instagram" style="font-size: x-large; margin-left: 2vw;"></i>
-                    </a>
+                <div class="d-flex align-items-center" style="margin-right: 1vw;">
+                    <!-- LANGUAGE -->
+                    <input type="image" src="img/bg_flag.svg" style="height: 25px;"
+                           onclick="switch_about(1), switch_team(1)">
+                    <div style="margin-right: 1vw;"></div>
+                    <input type="image" src="img/uk_flag.svg" style="height: 25px;"
+                           onclick="switch_about(0), switch_team(0)">
                 </div>
             </div>
         </div>
     </nav>
-    <!-- front home page -->
+
+    <div class="container-lg d-flex" style="width: 100vw; margin-top: 10vh; padding: 10px;">
     <!-- BACKGROUND IMAGE -->
-    <div class="container d-flex align-items-center h-100">
-        <img src="img/big_brain_background.png" alt="" style="width: auto; height: 100vh; padding-top: 10vh;">
+    <div class="row" style="width: 100%;">
+        <div class="col-md-3" >
+            <div class="row d-flex" style="padding-top: 5vh; justify-content: left;">
+                <img src="img/ibh_title_bg.png" alt="IBH BG">
+            </div>
+        </div>
+        <div class="col-md-6" style="justify-content: center;">
+            <div class="row d-flex" style="padding-top: 5vh; justify-content: center;">
+                <img src="img/braindots.png" alt="brain of dots" style="margin-top: 2vh; margin-left: 2vw;">
+            </div>
+        </div>
+        <div class="col-md-3" >
+            <div class="row d-flex" style="padding-top: 5vh; justify-content: right;">
+                <img src="img/ibh_title_en.png" alt="IBH EN">
+            </div>
+        </div>
     </div>
+    </div>
+</div>
 </header>
 
 <!-- MAIN -->
-<main style="margin-top: 5vh; color: #000;" >
-    <!-- ABOUT -->
-    <div class="container d-flex justify-content-center align-items-center"
-         style="height: 2000px;">
-        <a class="anchor" id="about"></a>
-        <p>
-        About IBH <br>
-        The &quot;Institute for Brain Health&quot; Foundation (IBH) is a Bulgarian non-governmental organization
-        aiming to develop brain health in Bulgaria by providing effective and widely accessible
-        neuroscience-based interventions. The foundation was established in 2024 by Prof. Dr. Jasmin
-        Vassileva, Dr. Elena Psederska, and Yulia Georgieva, as a result of their long-standing
-        collaboration and shared commitment to advance applied neuroscience and provide effective
-        and widely accessible interventions for improving brain health in Bulgaria.
-        The IBH aims to promote evidence-based neuroscience in Bulgaria by increasing public
-        awareness of brain health, promoting research, and developing novel personalized prevention
-        and intervention approaches for mental health disorders with the goal of increasing resilience
-        and improving well-being. It pioneers new methods and technologies in Bulgaria for screening
-        and assessment of personality, neurocognitive, psychophysiological, brain, genetic, and other
-        factors that increase vulnerability to brain disorders. In addition, the IBH organizes scientific
-        events and trainings, offers specialized training programs for mental health professionals, and
-        promotes the development of applied neuroscience in Bulgaria through international projects
-        and programs for sustainable research development.
-        За Фондация „Институт за мозъчно здраве“
-        Фондация „Институт за мозъчно здраве“ (ИМЗ) е българска неправителствена
-        организация, създадена с цел да развива мозъчното здраве в България. Фондацията е
-        основана през 2024 г. от проф. д-р Жасмин Василева, д-р Елена Пседерска и Юлия
-        Георгиева, като плод на тяхното дългогодишно сътрудничество и споделена ангажираност
-        към приложението на невронауките и предоставяването на ефективни и широко достъпни
-        интервенции за подкрепа на мозъчното здраве в България.
-        Фондацията е ангажирана с повишаване на обществената осведоменост относно
-        мозъчното здраве, насърчаване на научни изследвания и разработване на интервенции
-        за лечение на мозъчни разстройства, базирани на доказателства. Институтът цели да
-        трансформира водещите научни открития в практически решения, които могат да бъдат
-        интегрирани в образованието, превенцията и лечението на зависимости и други психични
-        разстройства, като същевременно насърчава мултидисциплинарното сътрудничество за
-        подобряване на благосъстоянието и качеството на живот в общността.
-        Целите на Фондацията включват разработването на ефективни превантивни,
-        терапевтични и неврорехабилитационни програми, насочени към намаляване на риска от
-        развитие на зависимости и други психични заболявания, както и стратегии за подкрепа на
-        възстановяването в периодите на ремисия. Институтът е пионер в създаването и
-        адаптирането на нови методи и технологии за скрининг и оценка на личностни,
-        неврокогнитивни, психофизиологични, мозъчни, генетични и други фактори, увеличаващи
-        уязвимостта към мозъчни разстройства. Институтът също организира научни събития и
-        обучения, предлага специализирани програми за обучение на професионалисти в
-        областта на психичното здраве и насърчава развитието на приложните невронауки в
-        България чрез международни проекти и програми за устойчиво научно развитие.
-        ЕКИП
-        Jasmin Vassileva, PhD
-        
-        Dr. Jasmin Vassileva is a tenured Professor of Psychiatry and Psychology at Virginia
-        Commonwealth University (VCU) in Richmond, Virginia, USA. A central theme of her research
-        is exploring the heterogeneity of addiction using neurocognitive, personality, genomic,
-        neuroimaging, and computational approaches. She integrates these findings into the
-        development of novel neuroscience-based programs for improving mental health. Her team
-        developed the Neuroscience-Informed Psychoeducation for Addiction (NIPA) program, aiming to
-        increase awareness and build resilience to the effects of alcohol, drugs and other emotional
-        triggers on brain and cognitive function. The program is currently being adapted for Bulgaria.
-        Vassileva is a Fulbright Scholar alumna (Bulgaria, 2021) and a principal investigator of
-        numerous multidisciplinary multi-site international projects, many of which take place in
-        Bulgaria. She is widely published in the field of computational and addiction neuroscience and
-        has authored over 120 peer-reviewed publications and chapters. Her international program of
-        research has been continuously funded by the U.S. National Institutes of Health (NIH) since
-        2003. In 2008, she established the first neurocognitive research laboratory for the study of
-        addictions in Bulgaria as a satellite of her lab in the United States. As one of the founders of the
-        Institute for Brain Health foundation, Prof. Vassileva leads the international research efforts of
-        the foundation, and the development and adaptation of novel evidence-based methods for
-        assessment, prevention, and intervention in neuropsychiatric disorders and programs for
-        increasing cognitive resilience and improving brain health in Bulgaria.
-        
-        Жасмин Василева, PhD
-        Д-р Жасмин Василева е професор по психиатрия и психология във Virginia
-        Commonwealth University (VCU) в Ричмънд, Вирджиния, САЩ. Централна тема на нейните
-        научни изследвания са етиологичните фактори при зависимостите и тяхната
-        хетерогенност, които тя изследва използвайки неврокогнитивни, личностни, геномни,
-        невроизобразителни и изчислителни подходи. Тя интегрира резултатите от тези
-        изследвания в разработването на нови терапевтични и превантивни програми за
-        подобряване на психичното здраве. Нейният екип наскоро разработи базираната на
-        невронауките прихообучителна програма за пристрастяване и зависимост (NIPA), целяща
-        повишаване на осведомеността и изграждане на устойчивост към ефектите на алкохола и
-        наркотиците върху мозъка и когнитивните функции, която в момента се адаптира за
-        България.
-        Проф. Василева е носител на наградата Фулбрайт (България, 2021) от Държавния
-        Департамент на САЩ. Тя е главен изследовател на множество мултидисциплинарни
-        международни проекти, част от които се провеждат в България. Публикувала е широко в
-        областта на невронауката на зависимостите и изчислителните невронауки и е автор на
-        над 120 рецензирани статии и глави. Международната ѝ изследователската програма е
-        финансирана без прекъсване от Националните институти по здравеопазване на САЩ
-        (NIH) от 2003 г. През 2008 г. създава първата неврокогнитивна изследователска
-        лаборатория за изследване на зависимости в България. Като един от основателите на
-        фондация „Институт за мозъчно здраве“, проф. Василева активно развива
-        международния научен обмен на фондацията и адаптирането и създаването на нови
-        методи за оценка, превенция, и интервенция при психиатрични заболявания и програми
-        за укрепване на психичното здраве в България.
-        
-        Elena Psederska, PhD
-        Dr. Elena Psederska is an Assistant Professor in the Department of Cognitive Science and
-        Psychology at New Bulgarian University, co-founder and President of the “Institute for Brain
-        Health” Foundation (IBH). With a decade of extensive research experience, she has
-        collaborated as a research scientist and co-investigator on multiple NIH-funded grants led by
-        Prof. Jasmin Vassileva. These projects aim to identify common and specific personality,
-        neurobehavioral, neuroimaging, polygenic, and computational markers associated with opioid
-        and stimulant use disorders, which are crucial for facilitating the development of more
-        personalized and targeted therapeutic interventions. Additionally, Dr. Psederska is dedicated to
-        translating and culturally adapting various psychological assessment tools and neuroscience-
-        based approaches, integrating them into Bulgaria’s frameworks for prevention and treatment of
-        addictions and other mental health disorders. In her capacity as president of IBH, Dr. Psederska
-        seeks to advance this transformative work, fostering a new era of integrative and evidence-
-        based solutions for mental health and addiction recovery in Bulgaria.
-        Елена Пседерска, PhD
-        Д-р Елена Пседерска е главен асистент в департамент „Когнитивна наука и психология“
-        на Нов български университет, съосновател и председател на Фондация “Институт за
-        мозъчно здраве” (IBH). С над десет години активна изследователска дейност, д-р
-        Пседерска участва като изследовател и съ-изследовател в множество грантове,
-        финансирани от Националните Институти по Здравеопазване (NIH; National Institutes of
-        Health) на Съединените Щати, под ръководството на проф. д-р Жасмин Василева. Тези
-        проекти целят да идентифицират общи и специфични личностни, невроповеденчески,
-        невроизобразителни, полигенни и изчислителни маркери, свързани с употребата на
-        опиоиди и стимуланти, които са критични за разработването на високо
-        индивидуализирани и ефективни терапевтични интервенции. Д-р Пседерска е ангажирана
-        с превода и културната адаптация на различни психологически инструменти за оценка и
-        терапевтични подходи, базирани на невронауките, като целта е тяхното интегриране в
-        рамките на българските стратегии за превенция и лечение на зависимости и други
-        психични разстройства. В своята роля на председател на Фондация “Институт за мозъчно
-        здраве”, д-р Пседерска се стреми да развива тези трансформативни дейности, които са
-        насочени към насърчаване на нова ера на интегративни и базирани на доказателства
-        решения за подобряване на психичното здраве и възстановяването от зависимости и
-        други психични разстройства в България.
-        Yuliya Georgieva
-        Yuliya Georgieva is a veteran Bulgarian harm reduction activist, co-founder and Chairperson of
-        the “Center for Humane Policy” Foundation, former co-chair of the Eurasian Harm Reduction
-        Association, and a member of the Board of Directors at the “Institute for Brain Health” (IBH).
-        She possesses a deep understanding and extensive experience in the theory and practical
-        implementation of harm reduction principles. Yuliya is also proficient in establishing and
-        sustaining relationships with international organizations for developing effective drug policies.
-        Her projects are dedicated to transforming Bulgarian drug policies from punitive approaches
-        based on criminalization of drug use to public health approaches grounded in scientific evidence
-        and humanism. In her capacity at IBH, she actively develops and supports initiatives and
-        
-        programs that not only refine harm reduction policies and practices but also integrate evidence-
-        based strategies for addiction prevention.
-        Юлия Георгиева
-        Юлия Георгиева е is a veteran Bulgarian harm reduction activist, съосновател и
-        председател на Фондация „Център за хуманни политики“, бивш съпредседател на
-        Евразийската асоциация за намаляване на вредите, съосновател и член на управителния
-        съвет на Фондация „Институт за мозъчно здраве“ (IBH). Тя притежава дълбоко разбиране
-        и експертиза в теорията и практическото прилагане на принципите за намаляване на
-        здравните щети от употребата на наркотици в България. Юлия има богат опит в
-        установяването и поддържането на контакти с международни организации за
-        разработване и прилагане на ефективни наркополитики. Нейните проекти целят да
-        оптимизират и трансформират българските политики по отношение на наркотиците,
-        преминавайки от криминализация към методи, базирани на научни доказателства и
-        хуманизъм. В своята роля във Фондация „Институт за мозъчно здраве“, Юлия активно
-        развива и подкрепя инициативи и програми, които не само усъвършенстват политиките и
-        практиките за намаляване на вредите, но и включват базирани на доказателства
-        стратегии за превенция на зависимости.
-        </p>
+<main style="max-width: 100vw; margin-top: 5vh; color: #000;" >
+    <!-- EVENTS -->
+    <div class="container d-flex justify-content-center" style="align-items: center;">
+        <div class="announcement">
+            <div>
+                Заповядайте на международния научен симпозиум по зависимости
+            </div>
+            <div style="font-size: larger;">
+                на <span style="font-weight: 800;">22 март</span> в <span style="font-weight: 800;">хотел Милениум</span>.
+            </div>
+            <div>
+                Вижте по-долу
+                <br>
+                <span style="font-size: x-large; font-weight: 600;">↓</span>
+            </div>
+        </div>
     </div>
-    <!-- NEWS -->
-    <div class="container d-flex justify-content-center align-items-center"
-         style="height: 1000px;">
-        <a class="anchor" id="news" style="margin-top: -25vh;"></a>
-        NEWS
+    <div id="events" style="display: flex; align-items: center; justify-content: center; padding-top: 10vh;">
+        <div style="position: relative; width: 90vw; height: auto;
+                padding-top: 100vh; padding-bottom: 0;
+                box-shadow: 0 2px 8px 0 slategrey;
+                margin-top: 1.6em; margin-bottom: 0.9em;
+                overflow: hidden;
+                border-radius: 1px;
+                will-change: transform;
+                background-color: white;">
+        <iframe loading="lazy" style="position: absolute; width: 100%;
+                                      height: 100%; top: 0; left: 0; border: none;
+                                      padding: 0vw; margin: 0;
+                                      background-color: white;"
+                src="https://www.canva.com/design/DAGeHiPVylo/if61ATD8q2qmA8fe30kfkQ/view?embed"
+                allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
+    </div>
+    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGeHiPVylo&#x2F;if61ATD8q2qmA8fe30kfkQ&#x2F;view?utm_content=DAGeHiPVylo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+       target="_blank" rel="noopener"></a>
+
+    <div class="container d-flex justify-content-center">
+        <!-- do flexy column stuff -->
+        <div class="container">
+            <div class="row align-items-start">
+                <!-- JS is dealing with this, because of language -->
+                <div id="about_title" class="col-md-3 text-title"></div>
+                <div id="about" class="col-md-9 about-ibh"></div>
+                <!-- run the script when page loads or there's no text, 0=EN, 1=BG -->
+                <script type="text/javascript">switch_about(1)</script>
+            </div>            
+        </div>
+    </div>
+    <!-- TEAM -->
+    <div class="container d-flex justify-content-center">
+        <!-- do flexy column stuff -->
+        <div id="team" class="container">
+            <!-- JASMIN -->
+            <div class="row align-items-start">
+                <!-- JS is dealing with this stuff, because of language -->
+                <div class="col-md-3">
+                    <div class="row">
+                        <div id="jasmin_title" class="text-title"></div>
+                    </div>
+                    <div class="row" style="justify-content: center;">
+                        <img src="img/jasmin_head.png" class="img-fluid" style="width: 15vw;">
+                    </div>
+                </div>
+                <div id="jasmin" class="col-md-9 about-ibh"></div>
+                <!-- run the script when page loads or there's no text, 0=EN, 1=BG -->
+                <script type="text/javascript">switch_team(1)</script>
+            </div>            
+            <!-- ELENA -->
+            <div class="row align-items-start">
+                <!-- JS is dealing with this, because of language -->
+                <div class="col-md-3">
+                    <div class="row">
+                        <div id="elena_title" class="text-title"></div>
+                    </div>
+                    <div class="row" style="justify-content: center;">
+                        <img src="img/elena_head.png" class="img-fluid" style="width: 15vw;">
+                    </div>
+                </div>
+                <div id="elena" class="col-md-9 about-ibh"></div>
+                <!-- run the script when page loads or there's no text, 0=EN, 1=BG -->
+                <script type="text/javascript">switch_team(1)</script>
+            </div>            
+            <!-- YULIYA -->
+            <div class="row align-items-start">
+                <!-- JS is dealing with this, because of language -->
+                <div class="col-md-3">
+                    <div class="row">
+                        <div id="yuliya_title" class="text-title"></div>
+                    </div>
+                    <div class="row" style="justify-content: center;">
+                        <img src="img/yuliya_head.png" class="img-fluid" style="width: 15vw;">
+                    </div>
+
+                </div>
+                <div id="yuliya" class="col-md-9 about-ibh"></div>
+                <!-- run the script when page loads or there's no text, 0=EN, 1=BG -->
+                <script type="text/javascript">switch_team(1)</script>
+            </div>            
+        </div>
     </div>
     <!-- CONTACT -->
-    <div class="container d-flex justify-content-center align-items-center"
-         style="height: 2000px;">
-        <a class="anchor" id="contact" style="margin-top: -25vh;"></a>
-        CONTACT
+    <div class="container d-flex justify-content-center align-items-center">
+        <div id="contact" style="height: 50vh;"></div>
     </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+<footer class="text-center text-lg-start bg-body-tertiary text-muted"
+        style="background-color: #0697be !important; width: 100vw; color: white; font-family: 'Montserrat';">
     
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-left p-4 border-bottom">
-        
-            <span style="margin-right: 2vw;">Get connected with us: </span>
-
-            <a href="" class="me-4 text-reset">
+        <div class="row">
+            <span style="margin-right: 2vw; font-size: larger; margin-bottom: 1vh;">Get connected with us: </span>
+            <p>
+                <a href="mailto:info@InstituteForBrainHealth.org" style="color: white;">
+                    <i class="fas fa-envelope me-4"></i>
+                    info@InstituteForBrainHealth.org
+                </a>
+            </p>
+        </div>
+        <div class="row">
+            <span style="margin-right: 2vw; font-size: larger;">Check us out on facebook: </span>
+            <a href="" class="me-3 text-reset">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-github"></i>
-            </a>
+        </div>
     </section> <!-- Social media -->
-
-    <!-- Links  -->
-    <section class="">
-        <div class="container text-center text-md-start mt-5">
-            
-            <!-- Grid row -->
-            <div class="row mt-3">
-                
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>IBH
-                    </h6>
-                    <p>
-                        Institute for Brain Health
-                    </p>
-                </div>
-
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Elements of IBH
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset">Research</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Publishing</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Education</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Behavioral Health</a>
-                    </p>
-                </div>
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Useful links
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset">NIH</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">NIMH</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">EBC</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">WHO</a>
-                    </p>
-                </div>
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i> 1234 Levski St. Sofia, BG</p>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        info@InstituteForBrainHealth.org
-                    </p>
-                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-                </div>
-            </div> <!-- Grid row -->
-        </div> <!-- Container -->
-    </section> <!-- Links  -->
-
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright: Institute for Brain Health
+    <div class="text-center p-4" style="background-color: black !important;">
+        © 2025 Institute for Brain Health
     </div>
 </footer>
 
 <!-- CODE -->
+
 <!-- MDB -->
 <script type="text/javascript" src="js/mdb.umd.min.js"></script>
 </body>
 </html>
-
-
-
-
-<!--  -->
