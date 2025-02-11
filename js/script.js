@@ -198,3 +198,26 @@ function switch_yuliya(bulgarian) {
         document.getElementById("yuliya_title").innerHTML = "Yuliya Georgieva";
     }
 }
+
+function switch_announcement(bulgarian) {
+    if (bulgarian) {
+        const text = `Заповядайте на международния научен симпозиум по зависимости
+            <br>
+            на <span style="font-size: larger; font-weight: 800;">22 март</span> в <span style="font-weight: 800;">хотел Милениум в София</span>.
+            <br>
+            Вижте по-долу
+            <br>
+            ↓`;
+        document.getElementById("announcement").innerHTML = text;
+    } else /* english */ {
+        const text = `Join us for the International Scientific Symposium on Addictions
+            <br>
+            on <span style="font-size: larger; font-weight: 800;">22 March</span> at <span style="font-weight: 800;">Hotel Millennium in Sofia</span>.
+            <br>
+            See below
+            <br>
+            ↓`;
+        document.getElementById("announcement").innerHTML = text;
+    }
+    
+}
