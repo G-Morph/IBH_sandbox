@@ -15,12 +15,48 @@
     object-fit: cover;
 }
 
-.brain-dots {
+@media screen and (max-width: 800px) {
+    .ibhbg {
+        max-width: 50vw !important;
+        padding-left: 3vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ibhen {
+        max-width: 47vw !important;
+        margin-top: 3vh !important;
+    }
+}
+
+.ibhenimg {
+    max-width: 10vw;
+}
+
+@media screen and (max-width: 800px) {
+    .brain-dots {
+        margin-left: 7vw !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .brain-dots {
+        padding-left: 1vw !important;
+    }
+}
+@media screen and (max-width: 1900px) {
+    .brain-dots {
+        padding-left: 1vw !important;
+        margin-top: -5vh !important;
+        margin-bottom: -5vh !important;
+    }
+}
+
+/* .brain-dots {
     flex: 50%;
     height: 100%;
     padding-right: 60px;
     padding-top: 100px;
-}
+} */
 
 .brain-dots-img {
     max-width: 100%;
@@ -37,7 +73,7 @@
 
 .text-title {
     font-family: 'Montserrat';
-    color: #0697be;
+    color: rgb(32, 183, 203);
     font-size: xx-large;
     font-weight: 800;
     text-align: center !important;
@@ -49,9 +85,17 @@
 }
 
 .announcement {
-    color: orangered;
+    color: rgb(250, 64, 12);
     text-align: center !important;
     font-family: 'Montserrat';
     font-size: 3vh;
     font-weight: 500;
 }
+
+@media screen and (max-width: 992px) {
+    .img-fluid {
+        width: 30vw !important;
+    }
+}
+
+/* jasmin's blue rgb(32, 183, 203) */
